@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="icon" type="image/x-icon" href="imagenes/flavicon.jpg">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formularios HTML</title>
+<link rel="stylesheet" href="../../estilo/estilo.css">
+</head>
+
+<body>
+
+<h2>Formularios HTML</h2>
+<p>Los formularios son utilizados para capturar información del usuario. El elemento se crea utilizando la etiqueta &lt;form&gt;</p>
+
+<div class="marcoCodigo">
+    <p><code>&lt;form&gt;</code></p>
+    <p><code>&nbsp;&nbsp;&nbsp;Elementos de formulario
+    </code></p>
+    <p><code>&lt;/form&gt;</code></p>
+</div>
+<p>El elemento es un contenedor para diferentes tipos de elementos de entrada, tales como: 
+<ul>
+	<li>Campos de texto</li>
+    <li>Casillas de verificación</li>
+    <li>Botones de opción</li>
+    <li>Botones de envío</li>
+    </p>
+</ul>
+
+<p>Los elementos de un formulario se pueden encontrar en el siguiente enlace: <a href="https://www.w3schools.com/html/html_form_elements.asp">https://www.w3schools.com/html/html_form_elements.asp</a>. A continuación se presentan los elementos mas utilizados en los formularios HTML:</p>
+
+<h2>Elemento input &lt;input&gt;</h2>
+<p>Es el elemento mas utilizado, se puede mostrar de muchas maneras, modificando el atributo <code>"type" &lt;input type=" "&gt;</code>, estos son algunos de ellos:</p>
+
+<table class="tablaInfo" align="center">
+	<tr>
+    	<th>
+        	Tipo
+        </th>
+        <th>
+        	Descripción
+        </th>
+        <th>
+        	Apariencia
+        </th>
+    </tr>
+    <tr>
+    	<td>
+        	<code>&lt;input type="text"&gt;</code>
+        </td>
+        <td>
+        	Muestra un campo de entrada de texto de una sola línea
+        </td>
+        <td>
+        	<input type="text" />
+        </td>
+    </tr>
+    <tr>
+    	<td>
+        	<code>&lt;input type="radio"&gt;</code>
+        </td>
+        <td>
+        	Muestra un botón de opción (para seleccionar una de las muchas opciones)
+        </td>
+        <td>
+        	<input type="radio" />
+        </td>
+    </tr>
+    <tr>
+    	<td>
+        	<code>&lt;input type="checkbox"&gt;</code>
+        </td>
+        <td>
+        	Muestra una casilla de verificación (para seleccionar cero o más de muchas opciones)
+        </td>
+        <td>
+        	<input type="checkbox" />
+        </td>
+    </tr>
+    <tr>
+    	<td>
+        	<code>&lt;input type="submit"&gt;</code>
+        </td>
+        <td>
+        	Muestra un botón de envío (para enviar el formulario)
+        </td>
+        <td>
+        	<input type="submit" />
+        </td>
+    </tr>
+    <tr>
+    	<td>
+        	<code>&lt;input type="button"&gt;</code>
+        </td>
+        <td>
+        	Muestra un botón en el que se puede hacer click.
+        </td>
+        <td>
+        	<input type="button" value="Elemento botón"/>
+        </td>
+    </tr>
+</table>
+<p>En el siguiente enlace encontrarán todos los tipos (<code>type</code> de input: <a href="https://www.w3schools.com/html/html_form_input_types.asp">https://www.w3schools.com/html/html_form_input_types.asp</a></p>
+<h2>Elemento label &lt;label&gt;</h2>
+<p>Este elemento define una etiqueta para muchos elementos de formulario. El elemento es útil para los usuarios de lectores de pantalla, porque el lector de pantalla leerá en voz alta la etiqueta cuando el usuario se centre en el elemento.</p>
+<p>El elemento también ayuda a los usuarios que tienen dificultades para hacer clic en regiones muy pequeñas (como botones de opción o casillas de verificación), porque cuando el usuario hace clic en el texto dentro del elemento, alterna el botón de opción / casilla de verificación.</p>
+<p>El atributo <code>for</code> de la etiqueta <code>&lt;label&gt;</code> debe ser igual al atributo <code>id</code> del elemento <code>&lt;input&gt;</code> para unirlos.</p>
+<p>A continuación se presenta la forma de enlazar los elementos <code>&lt;label&gt;</code> con los elementos del <code>&lt;form&gt;</code>.
+
+<table class="tablaInfo" align="center">
+	<tr>
+    	<th>
+        	Tipo
+        </th>
+        <th>
+        	Codigo
+        </th>
+        <th>
+        	Ejemplo
+        </th>
+	</tr>
+    <tr>
+    	<td>
+        	<code>&lt;input type="text"&gt;</code>
+        </td>
+        <td>
+        	<code>&lt;label for="nombreUsuario"&gt;Nombre de usuario&lt;/label&gt;<br />&lt;input type="text" id="nombre" name="nombreUsuario" /&gt;</code>
+        </td>
+        <td>
+        	<p align="left"><label for="nombreUsuario">Nombre de usuario</label><input type="text" id="nombreUsuario" name="nombreUsuario" /></p>
+        </td>
+	</tr>
+    <tr>
+    	<td>
+        	<code>&lt;input type="radio"&gt;</code>
+        </td>
+        <td>
+        	<code>&lt;input type="radio" id="html" name="htmlradio" /&gt;<br />&lt;label for="html"&gt;HTML&lt;/label&gt;<br /><br />
+            &lt;input type="radio" id="css" name="cssradio" /&gt;<br />&lt;label for="css"&gt;CSS&lt;/label&gt;<br /><br />
+            &lt;input type="radio" id="javascript" name="jsradio" /&gt;<br />&lt;label for="javascript"&gt;Javascript&lt;/label&gt;</code>
+        </td>
+        <td>
+        	<p align="left"><input type="radio" id="html" name="htmlradio"/><label for="html">HTML</label><br />
+            <input type="radio" id="css" name="cssradio"/><label for="css">CSS</label><br />
+            <input type="radio" id="javascript" name="jsradio" /><label for="javascript">Javascript</label></p>
+        </td>
+	</tr>
+    <tr>
+    	<td>
+        	<code>&lt;input type="checkbox"&gt;</code>
+        </td>
+        <td>
+        	<code>&lt;input type="checkbox" id="html" name="htmlradio" /&gt;<br />&lt;label for="html"&gt;HTML&lt;/label&gt;<br /><br />
+            &lt;input type="checkbox" id="css" name="cssradio" /&gt;<br />&lt;label for="css"&gt;CSS&lt;/label&gt;<br /><br />
+            &lt;input type="checkbox" id="javascript" name="jsradio" /&gt;<br />&lt;label for="javascript"&gt;Javascript&lt;/label&gt;</code>
+        </td>
+        <td>
+        	<p align="left"><input type="checkbox" id="html" name="htmlradio"/><label for="html">HTML</label><br />
+            <input type="checkbox" id="css" name="cssradio"/><label for="css">CSS</label><br />
+            <input type="checkbox" id="javascript" name="jsradio" /><label for="javascript">Javascript</label></p>
+        </td>
+	</tr>
+    <tr>
+    	<td>
+        	<code>&lt;input type="checkbox"&gt;</code>
+        </td>
+        <td>
+        	<code>&lt;input type="checkbox" id="html" name="htmlradio" /&gt;<br />&lt;label for="html"&gt;HTML&lt;/label&gt;<br /><br />
+            &lt;input type="checkbox" id="css" name="cssradio" /&gt;<br />&lt;label for="css"&gt;CSS&lt;/label&gt;<br /><br />
+            &lt;input type="checkbox" id="javascript" name="jsradio" /&gt;<br />&lt;label for="javascript"&gt;Javascript&lt;/label&gt;</code>
+        </td>
+        <td>
+        	<p align="left"><label for="nombre1">Nombre</label><input type="text" id="nombre1" name="nombre1"/><br />
+            <label for="apellido1">Apellido</label><input type="text" id="apellido1" name="apellido1"/><br /><br />
+            <input type="submit" value="Enviar"/></p>
+        </td>
+	</tr>
+</table>
+
+<h2>Atributos de formularios &lt;form&gt;</h2>
+<h3>Atributo action &lt;form action=""&gt;</h3>
+<p>El atributo action define la acción que se va a realizar cuando se envía el formulario. En el siguiente ejemplo, los datos del formulario se envían a un archivo llamado "action_page.php". Este archivo contiene un script del lado del servidor que controla los datos del formulario:</p>
+
+<div class="marcoCodigo">
+    <div class="codigosVisual" style="height:145px;">
+		&lt;form action="/action_page.php"&gt;
+  &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;<br />
+  &lt;input type="text" id="fname" name="fname" value="John"&gt;&lt;br&gt;<br />
+  &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;<br />
+  &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;<br />
+  &lt;input type="submit" value="Submit"&lt;
+&lt;/form&gt;    
+    </div>
+    <div class="codigosVisual" style="height:145px;">
+    <form action="/action_page.php">
+  <label for="fname">Nombre:</label><br>
+  <input type="text" id="fname" name="fname" value="Ricardo"><br>
+  <label for="lname">Apellido:</label><br>
+  <input type="text" id="lname" name="lname" value="Montoya"><br><br>
+  <input type="submit" value="Enviar">
+</form>
+    </div>
+</div>
+
+<h3>Atributo method &lt;form method=""&gt;</h3>
+<p>El atributo especifica el método HTTP que se utilizará al enviar los datos del formulario.<br/><br/>
+
+Los datos del formulario se pueden enviar como variables URL (get) o como transacción HTTP post (post). <code>method="get"method="post"</code><br/><br/>
+
+El método HTTP predeterminado al enviar datos de formulario es GET.</p>
+
+<p>Notas sobre GET:</p>
+<ul>
+	<li>
+    	Anexa los datos del formulario a la dirección URL, en pares nombre/valor
+    </li>
+	<li>
+    	¡NUNCA use GET para enviar datos confidenciales! (¡los datos del formulario enviados son visibles en la URL!)
+    </li>
+	<li>
+    	La longitud de una URL es limitada (2048 caracteres)
+Útil para envíos de formularios en los que un usuario desea marcar el resultado
+	</li>
+	<li>
+    GET es bueno para datos no seguros, como cadenas de consulta en Google
+    </li>
+</ul>
+
+<p>Notas sobre POST:</p>
+<ul>
+	<li>Anexa los datos del formulario dentro del cuerpo de la solicitud HTTP (los datos del formulario enviados no se muestran en la dirección URL)
+    </li>
+    <li>
+    POST no tiene limitaciones de tamaño y se puede utilizar para enviar grandes cantidades de datos.
+Los envíos de formularios con POST no se pueden marcar como favoritos
+	</li>
+</ul>
+
+<h3> Atributo autocompletar &lt;form autocomplete=""&gt;</h3>
+
+<p>El atributo especifica si un formulario debe tener autocompletado activado (on) o desactivado (off).</p>
+
+<p>Cuando el autocompletado está activado, el navegador completa automáticamente los valores en función de los valores que el usuario ha introducido antes.</p>
+
+</body>
+</html>

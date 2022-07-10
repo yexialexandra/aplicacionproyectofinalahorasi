@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="icon" type="image/x-icon" href="imagenes/flavicon.jpg">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Entidad de caracteres</title>
+<link rel="stylesheet" href="../../estilo/estilo.css">
+</head>
+
+<body>
+<h2>Caracteres reservados HTML y entidades de caracteres.</h2>
+<p>Algunos caracteres están reservados en para la estructura de las páginas HTML. Por ejemplo, si utiliza los signos menor que (&lt;) o mayor que (&gt;) en el texto (Caracteres usados en la estructura HTML), el navegador podría mezclarlos con etiquetas del cuerpo de la página.</p>
+
+<p>Las entidades de caracteres se utilizan para mostrar caracteres reservados en HTML; estos se pueden representar tanto por nombre o número de la entidad consevando la siguiente estructura:</p>
+
+<table class="tablaInfo" align="center">
+	<tr>
+		<th>Por nombre</th>
+        <th>Por numero</th>
+	</tr>
+    <tr>
+		<td><code>&amp;Nombre de la entidad;</code></td>
+		<td><code>&amp;#Número de la entidad;</code></td>
+	</tr>
+</table>
+<p> En la siguiente tabla se presentan algunas de las entidades de caracteres de los símbolos reservados de HTML:</p>
+
+<table class="tablaInfo" align="center">
+<tr>
+        <th>Caracter</th>
+        <th>Descripción</th>
+        <th>Nombre de entidad</th>
+        <th>Numero de entidad</th>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>Espacio continuo</td>
+        <td>&amp;nbsp;</td>
+        <td>&amp;#160;</td>
+    </tr>
+    <tr>
+        <td>&gt;</td>
+        <td>Mayor que</td>
+        <td>&amp;gt;</td>
+        <td>&amp;#62;</td>
+    </tr>
+    <tr>
+        <td>&lt;</td>
+        <td>Menor que</td>
+        <td>&amp;lt;</td>
+        <td>&amp;#60;</td>
+    </tr>
+    <tr>
+        <td>&amp;</td>
+        <td>et</td>
+        <td>&amp;amp;</td>
+        <td>&amp;#38;</td>
+    </tr>
+    <tr>
+        <td>&quot;</td>
+        <td>Comilla doble</td>
+        <td>&amp;quot;</td>
+        <td>&amp;#34;</td>
+    </tr>
+    <tr>
+        <td>&apos;</td>
+        <td>et</td>
+        <td>&amp;apos;</td>
+        <td>&amp;#39;</td>
+    </tr>
+</table>
+<p>A manera de ejemplo, en una frase donde se emplean caracteres específicos HTML , se hace necesario el uso de las entidades:</p>
+
+<div class="marcoCodigo">
+    <div class="codigosVisual">
+    	Bienvenidos a <code style="font-size:18px;">&lt;Richymanía&gt;</code>
+  </div>
+    <div class="codigosVisual">
+    	<code>Bienvenidos a &lt;code style="font-size:18px;"&gt;&amp;lt;Richymanía&amp;gt;&lt;/code&gt;</code>
+    </div>
+</div>
+</body>
+</html>

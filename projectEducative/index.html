@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<title>Richymanía</title>
+<link rel="icon" type="image/x-icon" href="imagenes/flavicon.jpg">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilo/estilo.css">
+
+<script>
+
+function direcciona(e,h){
+	document.getElementById("article").src=e;
+	document.getElementById("tituloSeccion").innerHTML=h;
+	}
+function muestraPagina(h){
+	switch (h){
+		
+		case 'html':
+			document.getElementById("navega").src="contenidohtml.html";
+			document.getElementById("article").src="tutorialhtml.html";
+		break;
+		
+		case 'css':
+			document.getElementById("navega").src="tutorialcss.html";
+			document.getElementById("article").src="tutorialcss.html";
+		break;
+		
+		case 'js':
+			document.getElementById("navega").src="";
+			document.getElementById("article").src="tutorialjs.html";
+		break;
+		
+		case 'ejs':
+			document.getElementById("navega").src="ejs.html";
+			document.getElementById("article").src="ejs.html";
+		break;
+		}
+	}
+</script>
+</head>
+
+<body>
+<header  class="col-12">
+<img src="imagenes/logoRichymania2.jpg">
+</header>
+
+<nav  class="col-12" id="menu">
+<ul>
+  <li class="col-2"><div></div><a href="#" onclick="muestraPagina('html')">HTML</a></li>
+  <li class="col-2"><a href="#" onclick="muestraPagina('css')">CSS</a></li>
+  <li class="col-2"><a href="#" onclick="muestraPagina('js')">JAVASCRIPT</a>
+  	<ul class="col-12">
+          <li class="col-12"><a href="#" onclick="muestraPagina('ejs')">Ejemplos</a></li>
+	</ul>
+  </li>
+  <li class="col-2"><a href="#">CURSOS AGRO</a>
+		<ul class="col-12">
+          <li  class="col-12"><a href="#">Botánica</a></li>
+          <li  class="col-12"><a href="#">Fisiología vegetal</a></li>
+          <li  class="col-12"><a href="#">Genética</a></li>
+          <li  class="col-12"><a href="#">Extensión rural</a></li>
+		</ul>
+  </li>
+<li class="col-2"><a href="#">HERRAMIENTAS AGRO</a></li>
+<li class="col-2"><a href="#">CONTACTANOS</a></li>    
+</ul>
+</nav>
+
+<div title="Tutoriales" class="lateral col-2" id="navega">
+    <a href="#" onClick="direcciona('paginas/html/introHTML.html', 'Introducción al HTML')">Introducción al HTML</a>
+    <a href="#" onClick="direcciona('paginas/html/entidadesHTML.html', 'Entidades HTML')">Entidades HTML</a>
+    <a href="#" onClick="direcciona('paginas/html/emojisHTML.html', 'Emojis HTML')">Emojis HTML</a>
+    <a href="#" onClick="direcciona('paginas/html/formulariosHTML.html', 'Formularios HTML')">Formularios HTML</a>
+    <a href="#" onClick="direcciona('paginas/html/canvas.html', 'Canvas')">Canvas HTML</a>
+</div>
+
+<div class="col-10" id="contenido">
+    <div class="navi col-2 bandera">Anterior</div>
+    <div class="col-8" id="tituloSeccion"></div>
+    <div class="navi col-2 bandera">Siguiente</div>
+    
+    <iframe class="col-12" id="article" src="paginas/principal.html">
+    </iframe>
+    
+    <div class="navi col-2">Anterior</div>
+    <div class="navi col-2" style="float:right;">Siguiente</div>
+</div>
+<div class="col-2" id="contacto">
+<form action="">
+	<table class="col-12" id="contactos">
+    	<tr>
+        	<th>
+            	<h3>Contactanos</h3>
+            </th>
+        </tr>
+    	<tr>
+        	<td>
+            	Nombre completo: 
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	<input type="text" id="nombreContacto" size="14%"/>
+         	</td>
+        </tr>
+    	<tr>
+        	<td>
+            	Email:
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	<input type="text" id="emailContacto" size="14%"/>
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	<input type="submit" id="Enviar" />
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+
+<footer  class="col-10" id="pie">
+<p>Esta página está desarrollada para el aprendizaje y la formación. Los ejemplos aquí expuestos están simplificados para mejorar la lectura y el aprendizaje. Los tutoriales, referencias y ejemplos se revisan constantemente para evitar errores, pero no podemos garantizar la corrección completa de todo el contenido. Al utilizar <code>&lt;RICHYMANÍA&gt;</code>, usted confirma haber leído y aceptado las condiciones de uso.
+<br><img  class="imgPie" src="imagenes/LogoRichymaniaface.jpg" width="5%"></p>
+</footer>
+
+</body>
+</html>

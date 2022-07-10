@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="icon" type="image/x-icon" href="imagenes/flavicon.jpg">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Entidad de caracteres</title>
+<link rel="stylesheet" href="../../estilo/estilo.css">
+</head>
+
+</head>
+
+<body>
+<h2>¿Qué es un Canvas en HTML?</h2>
+<p>El elemento <code>&lt;canvas&gt;</code> HTML se utiliza para dibujar gráficos, sobre la marcha, a través de JavaScript. El elemento es sólo un contenedor para gráficos. Debe usar JavaScript para dibujar realmente los gráficos.</p>
+
+<p>Canvas tiene varios métodos para dibujar trazados, cuadros, círculos, texto y agregar imágenes.</p>
+
+<p>Inicialmente se define el lienzo mediante la asignación a una variable así: <code>var c = document.getElementById("myCanvas");</code>. Posteriormente, se usa la expresión 
+
+Para trazar lineas se usa usa la expresión 
+
+<div class="marcoCodigo">
+	<div class="codigosVisual" style="height:460px;">
+<code>&lt;canvas id="myCanvas" width="400" height="400" style="border:1px solid #d3d3d3;" onclick="carga()"&gt;
+<br/>Your browser does not support the HTML canvas tag.<br/>&lt;/canvas&gt;<br/>
+&lt;script&gt;<br/><br/>
+function carga(){<br/>
+var c = document.getElementById("myCanvas");<br/>
+var ctx = c.getContext("2d");<br/>
+var color="#";<br/>
+var x=400;<br/>
+var a=0;<br/>
+var salto="";<br/><br/>
+	for(j=0;j<=400;j++){<br/>
+		salto= parseFloat(Math.round(Math.random()*20));<br/>
+		j=j+salto;<br/>
+		var b=j;<br/>
+		
+		var r=Math.round(Math.random()*10);<br/>
+		var g=Math.round(Math.random()*10);<br/>
+		var b=Math.round(Math.random()*10);<br/>
+
+	color= "#" + r + g + b;<br/>
+		ctx.strokeStyle=color;<br/>
+		ctx.beginPath();<br/>
+		ctx.moveTo(a,j);<br/>
+		ctx.lineTo(x,j);<br/>
+		ctx.stroke();<br/>
+		ctx.closePath();<br/>
+		
+		ctx.strokeStyle=color;<br/>
+		ctx.beginPath();<br/>
+		ctx.moveTo(j,x);<br/>
+		ctx.lineTo(j,a);<br/>
+		ctx.stroke();<br/>
+		ctx.closePath();<br/>
+		}<br/><br/>
+}
+&lt;/script&gt;</code>
+    </div>
+    <div class="codigosVisual" style="height:460px; text-align:center;">
+    <canvas id="myCanvas" width="430" height="430" style="border:1px solid #d3d3d3;" onclick="carga()">
+Your browser does not support the HTML canvas tag.</canvas>
+<script>
+function carga(){
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var color="#";
+var x=430;
+var a=0;
+var salto="";
+	for(j=0;j<=430;j++){
+		salto= parseFloat(Math.round(Math.random()*15));
+		j=j+salto;
+		var b=j;
+		
+		var r=Math.round(Math.random()*10);
+		var g=Math.round(Math.random()*10);
+		var b=Math.round(Math.random()*10);
+
+	color= "#" + r + g + b;
+		ctx.strokeStyle=color;
+		ctx.beginPath();
+		ctx.moveTo(a,j);
+		ctx.lineTo(x, j);
+		ctx.stroke();
+		ctx.closePath();
+		
+		ctx.strokeStyle=color;
+		ctx.beginPath();
+		ctx.moveTo(j,x);
+		ctx.lineTo(j,a);
+		ctx.stroke();
+		ctx.closePath();
+		}
+
+}
+</script>
+    </div>
+</div>
+
+<div class="marcoCodigo">
+	<div class="codigosVisual" style="height:460px;">
+
+    </div>
+    <div class="codigosVisual" style="height:460px; text-align:center;">
+    <canvas id="newCanvas" width="430" height="430" style="border:1px solid #d3d3d3;" onclick="drawing()">
+Your browser does not support the HTML canvas tag.</canvas>
+<script>
+function drawing(){
+var s = document.getElementById("newCanvas");
+var stx = s.getContext("2d");
+var ClientRect = s.getBoundingClientRect();
+var	x= Math.round(stx.clientX - ClientRect.left);
+var	y= Math.round(stx.clientY - ClientRect.top);
+alert(x + "- " + y);
+}
+</script>
+    </div>
+</div>
+</body>
+</html>
