@@ -18,7 +18,8 @@ import ServiciosonlineView from './views/ServiciosonlineView.vue';
 import PoscosechaView from './views/PoscosechaView.vue';
 import NutricionView from './views/NutricionView.vue';
 import MipeView from './views/MipeView.vue';
-import EstablecimientoView from './views/EstablecimientoView.vue'
+import EstablecimientoView from './views/EstablecimientoView.vue';
+import HeaderT from './components/HeaderT.vue'
 
 export default{
   name:'App',
@@ -27,7 +28,8 @@ export default{
   PoscosechaView,
   NutricionView,
   MipeView,
-  EstablecimientoView
+  EstablecimientoView,
+  HeaderT
 }
 </script>
 
