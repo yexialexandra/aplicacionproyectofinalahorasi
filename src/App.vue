@@ -1,37 +1,33 @@
 <template>
-  <HeaderT msg="jodaaaaa"/>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-    <router-link to="/vivero">Vivero</router-link>
-    <router-link to="/establecimiento">Establecimiento</router-link>
-    <router-link to="/MIPE">MIPE</router-link>
-    <router-link to="/nutrición">Nutrición</router-link>
-    <router-link to="/poscosecha">Poscosecha</router-link>
-    <router-link to="/servicios on line">Servicios on line</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/vivero">Vivero</router-link> |
+    <router-link to="/establecimiento">Establecimiento</router-link> |
+    <router-link to="/mipe">MIPE</router-link> |
+    <router-link to="/nutricion">Nutrición</router-link> |
+    <router-link to="/poscosecha">Poscosecha</router-link> |
+    <router-link to="/serviciosonline">Servicios on line</router-link> |
   </nav>
   <router-view/>
 </template>
 
 <script lang="ts">
-import HeaderT from './components/HeaderT.vue'
 import ViveroView from './views/ViveroView.vue';
 import ServiciosonlineView from './views/ServiciosonlineView.vue';
 import PoscosechaView from './views/PoscosechaView.vue';
 import NutricionView from './views/NutricionView.vue';
 import MipeView from './views/MipeView.vue';
-import EstablecimientoView from './views/EstablecimientoView.vue';
-import AboutView from './views/AboutView.vue';
+import EstablecimientoView from './views/EstablecimientoView.vue'
 
 export default{
-  HeaderT,
+  name:'App',
   ViveroView,
   ServiciosonlineView,
   PoscosechaView,
   NutricionView,
   MipeView,
-  EstablecimientoView,
-  AboutView
+  EstablecimientoView
 }
 </script>
 
