@@ -24,7 +24,6 @@ import EstablecimientoView from './views/EstablecimientoView.vue';
 import AboutView from './views/AboutView.vue';
 
 export default{
-  name:'App',
   HeaderT,
   ViveroView,
   ServiciosonlineView,
