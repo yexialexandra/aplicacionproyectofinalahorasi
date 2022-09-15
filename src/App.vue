@@ -1,15 +1,30 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/vivero">Vivero</router-link> |
-    <router-link to="/establecimiento">Establecimiento</router-link> |
-    <router-link to="/mipe">MIPE</router-link> |
-    <router-link to="/nutricion">Nutrición</router-link> |
-    <router-link to="/poscosecha">Poscosecha</router-link> |
-    <router-link to="/serviciosonline">Servicios on line</router-link> |
-  </nav>
-  <router-view/>
+  <header>
+    <nav class="menu">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/vivero">Vivero</router-link>
+      <router-link to="/establecimiento">Establecimiento</router-link>
+      <router-link to="/mipe">MIPE</router-link>
+      <router-link to="/nutricion">Nutrición</router-link>
+      <router-link to="/poscosecha">Poscosecha</router-link>
+      <router-link to="/serviciosonline">Servicios on line</router-link>
+      
+      <label for="check" class="esconder-menu">
+      </label>
+    
+      <h2 class="logo">ASOHASSPEN</h2>
+          <input type="checkbox" id="check"> 
+          <label for="check" class="mostrar-menu">
+          </label>
+    </nav>
+    <section id="banner">
+        <div class="contenido-banner">
+            <h3>CADA PRODUCTO TIENE SU ORIGEN, Y CADA ORIGEN TIENE SU HISTORIA</h3>
+            <a href="#" class="boton-empezar">EMPEZAR</a>
+        </div> 
+    </section>
+</header>
 </template>
 
 <script lang="ts">
@@ -19,7 +34,6 @@ import PoscosechaView from './views/PoscosechaView.vue';
 import NutricionView from './views/NutricionView.vue';
 import MipeView from './views/MipeView.vue';
 import EstablecimientoView from './views/EstablecimientoView.vue';
-import HeaderT from './components/HeaderT.vue'
 
 export default{
   name:'App',
@@ -28,8 +42,7 @@ export default{
   PoscosechaView,
   NutricionView,
   MipeView,
-  EstablecimientoView,
-  HeaderT
+  EstablecimientoView
 }
 </script>
 

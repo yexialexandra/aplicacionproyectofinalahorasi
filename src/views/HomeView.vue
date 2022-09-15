@@ -1,25 +1,5 @@
 <template>
-  <div class="hello"></div>
-    <header>
-        <h2 class="logo">ASOHASSPEN</h2>
-        <input type="checkbox" id="check"> 
-        <label for="check" class="mostrar-menu">
-
-        </label>
-        <nav class="menu">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre Nosotros</a>
-            <a href="#">Blog</a>
-            <label for="check" class="esconder-menu">
-            </label>
-        </nav>
-    </header>
-    <section id="banner">
-        <div class="contenido-banner">
-            <h3>CADA PRODUCTO TIENE SU ORIGEN, Y CADA ORIGEN TIENE SU HISTORIA</h3>
-            <a href="#" class="boton-empezar">EMPEZAR</a>
-        </div> 
-    </section>
+    
     <section id="informacion">
         <div class= "asociados"> 
             <img src="../assets/asociados.jpg" alt="joda">
