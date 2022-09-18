@@ -1,31 +1,16 @@
 <template>
-  <header>
-    <nav class="menu">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/vivero">Vivero</router-link>
-      <router-link to="/establecimiento">Establecimiento</router-link>
-      <router-link to="/mipe">MIPE</router-link>
-      <router-link to="/nutricion">Nutrición</router-link>
-      <router-link to="/poscosecha">Poscosecha</router-link>
-      <router-link to="/serviciosonline">Servicios on line</router-link>
-      </nav>
-      <nav>
-      <label for="check" class="esconder-menu">
-      </label>
-    
-      <h2 class="logo">ASOHASSPEN</h2>
-          <input type="checkbox" id="check"> 
-          <label for="check" class="mostrar-menu">
-          </label>
-    </nav>
-    <section id="banner">
-        <div class="contenido-banner">
-            <h3>CADA PRODUCTO TIENE SU ORIGEN, Y CADA ORIGEN TIENE SU HISTORIA</h3>
-            <a href="#" class="boton-empezar">EMPEZAR</a>
-        </div> 
-    </section>
-</header>
+  <HeaderT msg="jodaaaaa"/>
+  <nav>
+    <router-link to="/"> Home </router-link> |
+    <router-link to="/about"> About </router-link>
+    <router-link to="/vivero"> Vivero </router-link>
+    <router-link to="/establecimiento"> Establecimiento </router-link>
+    <router-link to="/MIPE"> MIPE </router-link>
+    <router-link to="/nutricion"> Nutricion </router-link>
+    <router-link to="/poscosecha"> Poscosecha </router-link>
+    <router-link to="/serviciosonline"> Serviciosonline </router-link>
+  </nav>
+  <router-view />
 </template>
 
 <script lang="ts">
@@ -73,23 +58,6 @@ nav a.router-link-exact-active {
 margin:0;
 padding:0;
 font-family: verdana, Geneva, Tahoma, sans-serif;
-}
-
-/*HEADER*/
-header{
-    height: 100px;
-    background-color: darkgreen;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.logo{
-    text-transform: uppercase;
-    color: #6cc091;
-    font-weight: 200;
 }
 .menu a{
     color: rgb(227, 229, 241);
