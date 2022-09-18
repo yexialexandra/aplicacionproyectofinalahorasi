@@ -1,6 +1,6 @@
 <template>
-    <div class="about">
-      <h1> | This is an about page | </h1>
+    <div class="serviciosonline">
+      <h1> | las putis | </h1>
     </div>
   </template>
   <script lang="ts">

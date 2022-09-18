@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div class="establecimiento">
       <h1> | Que mira | </h1>
     </div>
   </template>

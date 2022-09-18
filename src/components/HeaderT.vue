@@ -1,5 +1,5 @@
 <template>
-    <div class="hello"></div>
+    <div class="hello">
     <header>
         <h2 class="logo">ASOHASSPEN</h2>
         <input type="checkbox" id="check"> 
@@ -33,7 +33,8 @@
             <P>Es una estrategia de desarrollo Rural con identidad Territorial que fue diseñada por la Secretaria de Agricultura del Departamento de Caldas para impulsar y dinamizar la comercialización de los productos del sector agropecuario y agroindustrial, esta estrategia resalta la procedencia, saber cultural  la naturalidad, la calidad, la innocuidad, la sanidad e innovación de los diferentes productos, con el propósito de impulsar el crecimiento socioeconómico del departamento, buscando así posicionar los productos en mercados  especializados y formados del orden local regional, nacional e internacional. La estrategia Origen Caldas, reconoce con su sello la producción con altos estándares de calidad y buenas prácticas de manufactura..</P>
             <a href="#" class="boton-saber-mas">Saber Más</a>
         </div>
-    </section>    
+    </section>   
+</div> 
 </template>
 <script lang="ts">
 export default{
@@ -44,5 +45,20 @@ export default{
 }
 </script>
 <style scoped>
-
+/*HEADER*/
+header{
+    height: 100px;
+    background-color: darkgreen;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.logo{
+    text-transform: uppercase;
+    color: #6cc091;
+    font-weight: 200;
+}
 </style>

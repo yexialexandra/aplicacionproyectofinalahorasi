@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div class="mipe">
       <h1> | Sapo HP | </h1>
     </div>
   </template>
