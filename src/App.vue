@@ -20,12 +20,8 @@ import PoscosechaView from './views/PoscosechaView.vue';
 import NutricionView from './views/NutricionView.vue';
 import MipeView from './views/MipeView.vue';
 import EstablecimientoView from './views/EstablecimientoView.vue';
-<<<<<<< HEAD
-import Establecimiento from './components/Establecimiento.vue';
-=======
 import MaterialesView from './views/MaterialesView.vue';
 import AboutView from './views/AboutView.vue';
->>>>>>> f0b3bd5924eea757811019c01fdf9e4f8035ee76
 
 export default{
   name:'App',
@@ -35,11 +31,8 @@ export default{
   NutricionView,
   MipeView,
   EstablecimientoView,
-<<<<<<< HEAD
-  Establecimiento,
-=======
-  MaterialesView
->>>>>>> f0b3bd5924eea757811019c01fdf9e4f8035ee76
+  MaterialesView,
+  AboutView,
 }
 </script>
 

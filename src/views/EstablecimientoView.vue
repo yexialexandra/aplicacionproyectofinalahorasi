@@ -10,10 +10,8 @@ se debe sembrar si no hay un buen drenaje interno y externo (Bernal, 2014).</h3>
     </div>
   </template>
   <script lang="ts">
-    import Establecimiento from '@/components/Establecimiento.vue';
     export default{
         name: 'EstablecimientoView',
-        Establecimiento,
         props:{
             msg:String
         }
