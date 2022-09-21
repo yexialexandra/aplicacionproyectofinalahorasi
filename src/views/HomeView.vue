@@ -1,5 +1,4 @@
 <template>
-    
     <section id="informacion">
         <div class= "asociados"> 
             <img src="../assets/asociados.jpg" alt="joda">
