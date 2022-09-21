@@ -1,5 +1,4 @@
 <template>
-  <HeaderT msg="jodaaaaa"/>
   <nav>
     <router-link to="/"> Home </router-link> |
     <router-link to="/about"> About </router-link>
@@ -20,6 +19,7 @@ import PoscosechaView from './views/PoscosechaView.vue';
 import NutricionView from './views/NutricionView.vue';
 import MipeView from './views/MipeView.vue';
 import EstablecimientoView from './views/EstablecimientoView.vue';
+import Establecimiento from './components/Establecimiento.vue';
 
 export default{
   name:'App',
@@ -28,7 +28,8 @@ export default{
   PoscosechaView,
   NutricionView,
   MipeView,
-  EstablecimientoView
+  EstablecimientoView,
+  Establecimiento,
 }
 </script>
 
@@ -86,105 +87,6 @@ font-family: verdana, Geneva, Tahoma, sans-serif;
 
 #check{
     display:none;
-}
-
-/* BANNER */
-#banner{
-    padding: 0 50px;
-    background-image: url(./assets/BannerAguacate.jpg);
-    height: 45vh;
-    background-size: cover;
-    background-position: center;
-}
-#banner::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 45vh;
-    left: 0;
-}
-.contenido-banner{
-    position: relative;
-    color:rgb(59, 57, 57);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contenido-banner h3{
-    font-size: 30px;
-    font-weight: 400;
-    padding: 10px 0px;
-}
-.contenido-banner h3 span{
-    font-weight: 600;
-}
-.contenido-banner p{
-    text-align: right;
-    font-size: 50px;
-    color:#4D4D5c;
-}
-
-.boton-empezar{
-    text-decoration: none;
-    color:#fff;
-    border: 1px solid #6cc091;
-    padding: 20px 40px;
-    align-self: baseline;
-    transition: all 0.45;
-}
-.boton-empezar:hover{
-    background: #6cc09070;
-}
-
-/* INFORMACION*/
-#informacion{
-    padding: 20px 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-#informacion img{
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-}
-.asociados{
-    width: 60%;
-
-}
-.quienessomos{
-    padding: 30px 30px;
-    width: 40%;
-}
-#informacion div h4{
-    color: #4D4D5c;
-    font-size: 20px;
-    margin: 15px 0px;
-}
-#informacion div h5{
-    color: #4D4D5c;
-    font-size: 20px;
-    margin: 15px 0px;
-}
-#informacion div p{
-    color: #4d4d5c87;
-    font-size: 18px;
-}
-.boton-saber-mas{
-   display: inline-block;
-   text-decoration: none;
-   color: #6cc091;
-   padding: 10px 30px;
-   border: 3px solid #6cc091;
-   border-radius: 30px;
-   margin-top: 15px;
-   transition: all 0.4s;
-}
-.boton-abr-mas:hover{
-    background: #6cc091;
-    color:#fff;
 }
 /*RESPONSIVE*/
 @media(max-width: 768px){
