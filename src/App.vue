@@ -1,7 +1,8 @@
 <template>
   <nav>
-    <router-link to="/"> Home </router-link> |
+    <router-link to="/"> Home </router-link>
     <router-link to="/about"> About </router-link>
+    <router-link to="/materiales"> Materiales </router-link>
     <router-link to="/vivero"> Vivero </router-link>
     <router-link to="/establecimiento"> Establecimiento </router-link>
     <router-link to="/MIPE"> MIPE </router-link>
@@ -19,7 +20,12 @@ import PoscosechaView from './views/PoscosechaView.vue';
 import NutricionView from './views/NutricionView.vue';
 import MipeView from './views/MipeView.vue';
 import EstablecimientoView from './views/EstablecimientoView.vue';
+<<<<<<< HEAD
 import Establecimiento from './components/Establecimiento.vue';
+=======
+import MaterialesView from './views/MaterialesView.vue';
+import AboutView from './views/AboutView.vue';
+>>>>>>> f0b3bd5924eea757811019c01fdf9e4f8035ee76
 
 export default{
   name:'App',
@@ -29,7 +35,11 @@ export default{
   NutricionView,
   MipeView,
   EstablecimientoView,
+<<<<<<< HEAD
   Establecimiento,
+=======
+  MaterialesView
+>>>>>>> f0b3bd5924eea757811019c01fdf9e4f8035ee76
 }
 </script>
 
