@@ -15,11 +15,4 @@ import ItemRequerimiento from '@/components/itemRequerimiento.vue';
 }
 </script>
 <style scoped>
-    .infoCultivo{
-        display: block;
-    }
-    .analisis{
-        display:inline-block;
-    }
-
 </style>

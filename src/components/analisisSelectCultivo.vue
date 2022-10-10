@@ -1,57 +1,29 @@
 <script lang="ts">
   import { ref } from 'vue'
-
-   const cic=ref('');
-    const n=ref('');
-    const p=ref('');
-    const k=ref('');
-    const mg=ref('');
-    const ca=ref('');
-    const s=ref('');
-    const mn=ref('');
-    const fe=ref('');
-    const al=ref('');
-    const b=ref('');
-    const ph=ref('');
-    const tx=ref('');
+  import {store} from '../store/store'
 
   export default{
+    setup() {
+            return {
+                store,
+            }
+    },
       name: 'analisisSelectCultivo',
-      props:{
-          info:Object
-      },
-      data(){
-          return{
-              cic,
-              n,
-              p,
-              k,
-              mg,
-              ca,
-              s,
-              mn,
-              fe,
-              al,
-              b,
-              ph,
-              tx
-          }
-      }
   }
 </script>
 <template>    
 <div class="analisisCultivo">
-    <label for="ph" class="placeholder">
+    <label for="ph">
         pH
     </label>
     <br/>
-    <input class="input" v-model.number="ph" placeholder=""/>
+    <input v-model.number="store.ph" placeholder=""/>
     <br/>
-    <label for="textura-suelo" class="placeholder">
+    <label for="textura-suelo">
         Textura de suelo
     </label>
     <br/>
-    <select id="textura-suelo" placeholder=" " class="input" v-model="tx">
+    <select id="textura-suelo" v-model="store.tx">
         <option>-- Seleccione --</option>
         <option>Franco</option>
         <option>Arenoso</option>
@@ -62,46 +34,49 @@
         <option>Franco limoso</option>
     </select>    
     <br/>   
-    <label for="cic" class="placeholder">CIC</label>
+    <label for="cic">CIC</label>
     <br/>
-    <input id="cic" type="text" class="input" v-model.number="cic" placeholder=""/>
+    <input id="cic" type="text" v-model.number="store.cic" placeholder=""/>
     <br/>
-    <label for="n" class="placeholder">Nitrógeno (N)</label><br/><input id="n" type="text" class="input" v-model.number="n" placeholder=""/><br/>
-    <label for="p" class="placeholder">Fosforo (P)</label>
+    <label for="n">Nitrógeno (N)</label>
     <br/>
-    <input id="p" type="text" class="input" v-model.number="p" placeholder=""/>
+    <input id="n" type="text" v-model.number="store.n" placeholder=""/>
     <br/>
-    <label for="k" class="placeholder">Potasio (K)</label>
+    <label for="p">Fosforo (P)</label>
     <br/>
-    <input id="k" type="text" class="input" v-model.number="k" placeholder=""/>
+    <input id="p" type="text" v-model.number="store.p" placeholder=""/>
     <br/>
-    <label for="mg" class="placeholder">Magnesio (Mg)</label>
+    <label for="k">Potasio (K)</label>
     <br/>
-    <input id="mg" type="text" class="input" v-model.number="mg" placeholder=""/>
+    <input id="k" type="text" v-model.number="store.k" placeholder=""/>
     <br/>
-    <label for="ca" class="placeholder">Calcio (Ca)</label>
+    <label for="mg">Magnesio (Mg)</label>
     <br/>
-    <input id="ca" type="text" class="input" v-model.number="ca" placeholder=""/>
+    <input id="mg" type="text" v-model.number="store.mg" placeholder=""/>
     <br/>
-    <label for="s" class="placeholder">Azufre (S)</label>
+    <label for="ca">Calcio (Ca)</label>
     <br/>
-    <input id="s" type="text" class="input" v-model.number="s" placeholder=""/>
+    <input id="ca" type="text" v-model.number="store.ca" placeholder=""/>
     <br/>
-    <label for="mn" class="placeholder">Manganeso (Mn)</label>
+    <label for="s">Azufre (S)</label>
     <br/>
-    <input id="mn" type="text" class="input" v-model.number="mn" placeholder=""/>
+    <input id="s" type="text" v-model.number="store.s" placeholder=""/>
     <br/>
-    <label for="fe" class="placeholder">Hierro (Fe)</label>
+    <label for="mn">Manganeso (Mn)</label>
     <br/>
-    <input id="fe" type="text" class="input" v-model.number="fe" placeholder=""/>
+    <input id="mn" type="text" v-model.number="store.mn" placeholder=""/>
     <br/>
-    <label for="al" class="placeholder">Aluminio (Al)</label>
+    <label for="fe">Hierro (Fe)</label>
     <br/>
-    <input id="al" type="text" class="input" v-model.number="al" placeholder=""/>
+    <input id="fe" type="text" v-model.number="store.fe" placeholder=""/>
     <br/>
-    <label for="b" class="placeholder">Boro (B)</label>
+    <label for="al">Aluminio (Al)</label>
     <br/>
-    <input id="b" type="text" class="input" v-model.number="b" placeholder=""/>
+    <input id="al" type="text" class="input" v-model.number="store.al" placeholder=""/>
+    <br/>
+    <label for="b">Boro (B)</label>
+    <br/>
+    <input id="b" type="text" class="input" v-model.number="store.b" placeholder=""/>
     <br/>
     <br/>
 </div>

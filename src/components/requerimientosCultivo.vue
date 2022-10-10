@@ -1,170 +1,107 @@
 <script lang="ts">
-import {ref, reactive, computed, watch} from "vue";
+import {ref, computed} from "vue";
 import ItemRequerimiento from "./itemRequerimiento.vue";
 import AnalisisSelectCultivo from "./analisisSelectCultivo.vue";
+import {store} from '../store/store'
 
     export default {
-    data() {
-        return {
-            requerimientos: [
-                {
-                    "key": "ph",
-                    "label": "pH",
-                    "type": "text",
-                    "value": "5.5"
-                },
-                {
-                    "key": "textura-de-suelo",
-                    "label": "Textura de suelo",
-                    "type": "select",
-                    "options": [
-                        { "value": "franco", "label": "Franco" },
-                        { "value": "arenoso", "label": "Arenoso" },
-                        { "value": "archilloso", "label": "Arcilloso" },
-                        { "value": "limoso", "label": "Limoso" },
-                        { "value": "franco-arenoso", "label": "Franco arenoso" },
-                        { "value": "franco-arcilloso", "label": "Franco arcilloso" },
-                        { "value": "franco-limoso", "label": "Franco limoso" }
-                    ],
-                    "value": "franco-arenoso"
-                },
-                {
-                    "key": "cic",
-                    "label": "CIC",
-                    "type": "text",
-                    "value": "200"
-                },
-                {
-                    "key": "n",
-                    "label": "Nitrógeno (N)",
-                    "type": "text",
-                    "value": "51.5"
-                },
-                {
-                    "key": "p",
-                    "label": "Fósforo (P)",
-                    "type": "text",
-                    "value": "20.6"
-                },
-                {
-                    "key": "k",
-                    "label": "Potasio (K)",
-                    "type": "text",
-                    "value": "93.8"
-                },
-                {
-                    "key": "ca",
-                    "label": "Calcio (Ca)",
-                    "type": "text",
-                    "value": "1.7"
-                },
-                {
-                    "key": "s",
-                    "label": "Azufre (S)",
-                    "type": "text",
-                    "value": "6.9"
-                },
-                {
-                    "key": "mg",
-                    "label": "Magnesio (Mg)",
-                    "type": "text",
-                    "value": "5.9"
-                },
-                {
-                    "key": "mn",
-                    "label": "Manganeso (Mn)",
-                    "type": "text",
-                    "value": "1"
-                },
-                {
-                    "key": "b",
-                    "label": "Boro (B)",
-                    "type": "text",
-                    "value": "1.2"
-                },
-                {
-                    "key": "fe",
-                    "label": "Hierro (Fe)",
-                    "type": "text",
-                    "value": "0.3"
-                },
-                {
-                    "key": "al",
-                    "label": "Aluminio (Al)",
-                    "type": "text",
-                    "value": "-"
-                }              
-            ]
-        };
-    },
-    props:{
-        cic:Number,
-        n:Number,
-        p:Number,
-        k:Number,
-        mg:Number,
-        ca:Number,
-        s:Number,
-        mn:Number,
-        fe:Number,
-        al:Number,
-        b:Number,
-        tx:String,
-        ph:Number  
-    },
-    components: { ItemRequerimiento, AnalisisSelectCultivo }
-}
+        setup() {
+            return {
+                store
+            }
+        },
+        components: { ItemRequerimiento, AnalisisSelectCultivo },
+        computed: {
+            enmiendas() {
+                let cantCal, satAl = 0;
+                satAl = (store.al / (store.ca + store.mg + store.k + store.al))*100;
+                if(satAl>10){
+                    cantCal=store.al-((10*store.al)/satAl)
+                }   
+
+                return cantCal;
+            },
+            fertilizantes(){
+                let cantN, cantP, cantK, ureaReq, dapReq, kclReq, nExiste, pExiste, kExiste = 0;
+
+                const valN = parseFloat(store.requerimientos.filter( item => item.key === 'n' )[0].value);
+                const valP = parseFloat(store.requerimientos.filter( item => item.key === 'p' )[0].value);
+                const valK = parseFloat(store.requerimientos.filter( item => item.key === 'k' )[0].value);
+
+
+                cantN = (valN-(((2000000*store.n)/100)*1.25)*0.5)*11
+                cantP = (valP-(store.p*2.29*2*(1)*0.2))*11
+                cantK = (valK-(store.k*1.2*1170*0.4))*11
+
+                dapReq=(cantP*100)/46
+                if((cantN-(dapReq*0.18))>0){
+                    ureaReq=(cantN-(dapReq*0.18))*100/46
+                }else{
+                    ureaReq=0
+                }
+                kclReq=(cantK*100)/60
+                return {
+                urea: ureaReq,
+                dap: dapReq,
+                kcl: kclReq
+                }
+            }
+
+  }
+    }
+
 </script>
 <template>
 <div class="general">
     <div class="form">
-        <h3>Diligencie los resultados del análisis de suelos</h3>
+        <h5>Diligencie los resultados del análisis de suelos</h5>
         <br/>
         <AnalisisSelectCultivo></AnalisisSelectCultivo>
     </div>
     <div class="form">
-    <h3>Requerimiento del cultivo <br/> Aguacate</h3>
+    <h5>Requerimiento del cultivo <br/> Aguacate</h5>
     <br/>
-    <ItemRequerimiento v-for="item in requerimientos" :key="item.key" :info="item"/>
+    <ItemRequerimiento/>
     <br/>
     <br/>
     </div>
     <div class="form observaciones">
-        <h3>Recomendaciones de fertilización y enmiendas</h3>
+        <h5>Recomendaciones de fertilización y enmiendas</h5>
+        <p>Enmienda: {{enmiendas}}</p>
+        <p>Fertilizantes</p>
+        <p>Urea: {{fertilizantes.urea}}kg/planta/año</p>
+        <p>DAP: {{fertilizantes.dap}}kg/planta/año</p>
+        <p>KCl: {{fertilizantes.kcl}}kg/planta/año</p>
     </div>
-    <!--<div class="recomendaciones">
-        <p>Enmienda: {{al/(ca+mg+k+al)}}</p>
-        <p>Fertilización: </p>
-        <p v-for="(value, key) in requerimientos">
-        {{value-((((2000000*n?)/100)*1.25)/100)*0.5}}
-        </p>
-
-        <p>DAP: {{}}</p>
-        <p>KCl: {{}}</p>
-    </div>-->
 </div>
 </template>
 <style scoped>
 .general {
   align-items: center;
-  background-color: rgb(190, 249, 190);
-  display: flex;
+  background-color: rgb(255, 255, 255);
+  display:flex;
   justify-content: center;
   height: 100vh;
 }
 
 .form {
-  background-color: #043109;
+  background-color: #ccf6d1;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 85%;
+  height: 52vw;
   padding: 1%;
   width: 22%;
-  color:#FFFFFF;
+  color:#0b0909;
   margin: 10px;
+  margin-top: 10%;
+  position: static;
 }
-
 .observaciones{
     width: 40%;
+}
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 </style>

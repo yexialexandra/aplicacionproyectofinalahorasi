@@ -1,22 +1,25 @@
 <script lang="ts">
 import {ref, reactive, computed, watch} from "vue";
+import {store} from '../store/store'
 
 export default{
+    setup() {
+            return {
+                store,
+            }
+        },
     name: 'ItemRequerimiento',
-    props:{
-        info: Object
-    }
 }
 </script>
 <template>
-    <div class="itemRequerimiento">
-        <label>{{info?.label}}</label><br/>
-        <input v-if="info?.type === 'text'" type="text" :value="info.value"/>
-            <select v-else-if="info?.type === 'select'" :value="info?.value">
-                <option>-- seleccione --</option>
-                <option v-for="item in info.options" :key="item.label" :value="item.key">
-                {{item.label}}
-                </option>
+    <div class="itemRequerimiento" v-for="item in store.requerimientos" :key="item.key" :info="item">
+        <label>{{item.label}}</label><br/>
+        <input v-if="item.type === 'text'" type="text" v-model="item.value"/>
+        <select v-else-if="item.type === 'select'" v-model="item.value">
+            <option>-- seleccione --</option>
+            <option v-for="info in item.options" :key="info.label" :value="info.value">
+            {{info.label}}
+            </option>
         </select>
     </div>
   </template>
