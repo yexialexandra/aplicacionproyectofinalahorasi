@@ -16,5 +16,4 @@ se debe sembrar si no hay un buen drenaje interno y externo (Bernal, 2014).</h3>
             msg:String
         }
     }
-    </script>
-    
+  </script>

@@ -1,13 +1,25 @@
 <template>
-    <div class="serviciosonline">
-      <h1> | This is an about page | </h1>
+    <div>
+       <RequerimientosCultivo></RequerimientosCultivo>
     </div>
 </template>
 <script lang="ts">
+import RequerimientosCultivo from '../components/requerimientosCultivo.vue';
+import InfoCultivo from '@/components/infoCultivo.vue';
+import ItemRequerimiento from '@/components/itemRequerimiento.vue';
     export default{
-        name:'ServiciosonlineView',
-        props:{
-            msg:String
-        }
-    }
+    name: "ServiciosonlineView",
+    components: {
+    RequerimientosCultivo,
+}
+}
 </script>
+<style scoped>
+    .infoCultivo{
+        display: block;
+    }
+    .analisis{
+        display:inline-block;
+    }
+
+</style>
