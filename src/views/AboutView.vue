@@ -1,19 +1,11 @@
 <template>
-    <div class="col-md-4">
-      <h1>de nuevo</h1>
-      <CarruselComponent/>
+    <div class="About">
     </div>
   </template>
- <script lang="ts">
-  import CarruselComponent from "@/components/CarruselComponent.vue";
-
+  <script lang="ts">
   export default{
-      components:{
-          CarruselComponent
-      }
-  }
+    name: 'ItemRequerimiento'
+}
 </script>
-
-<style>
-
+<style scoped>
 </style>

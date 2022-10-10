@@ -51,7 +51,8 @@ export default{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
+  background-color: #012c14;
 }
 
 nav {
@@ -60,11 +61,14 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  width: 10%;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #696b6a;
 }
 /*REST*/
 *{
@@ -73,7 +77,7 @@ padding:0;
 font-family: verdana, Geneva, Tahoma, sans-serif;
 }
 .menu a{
-    color: rgb(227, 229, 241);
+    color: rgb(1, 38, 1);
     text-transform: uppercase;
     text-decoration: none;
     padding: 0 10px;
@@ -94,7 +98,7 @@ font-family: verdana, Geneva, Tahoma, sans-serif;
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover{
-    background: #6cc091;
+    background: #82d8a7;
 }
 
 #check{

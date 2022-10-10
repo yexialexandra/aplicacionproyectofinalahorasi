@@ -5,9 +5,6 @@
   </template>
   <script lang="ts">
     export default{
-        name:'ViveroView',
-        props:{
-            msg:String
-        }
+        name:'ViveroView'
     }
     </script>

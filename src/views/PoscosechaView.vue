@@ -1,3 +1,4 @@
+
 <template>
     <div class="poscosecha">
       <h1> | Lo logré | </h1>
