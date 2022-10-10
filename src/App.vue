@@ -11,28 +11,37 @@
     <router-link to="/serviciosonline"> Serviciosonline </router-link>
   </nav>
   <router-view />
+  <vivero-view></vivero-view>
 </template>
 
 <script lang="ts">
-import ViveroView from './views/ViveroView.vue';
-import ServiciosonlineView from './views/ServiciosonlineView.vue';
-import PoscosechaView from './views/PoscosechaView.vue';
-import NutricionView from './views/NutricionView.vue';
-import MipeView from './views/MipeView.vue';
-import EstablecimientoView from './views/EstablecimientoView.vue';
-import MaterialesView from './views/MaterialesView.vue';
-import AboutView from './views/AboutView.vue';
+//import ViveroView from './views/ViveroView.vue';
+//import ServiciosonlineView from './views/ServiciosonlineView.vue';
+//import PoscosechaView from './views/PoscosechaView.vue';
+//import NutricionView from './views/NutricionView.vue';
+//import MipeView from './views/MipeView.vue';
+//import EstablecimientoView from './views/EstablecimientoView.vue';
+//import MaterialesView from './views/MaterialesView.vue';
+//import AboutView from './views/AboutView.vue';
+//import Carousel from "./components/carousel/Carousel.vue"
 
 export default{
   name:'App',
-  ViveroView,
-  ServiciosonlineView,
-  PoscosechaView,
-  NutricionView,
-  MipeView,
-  EstablecimientoView,
-  MaterialesView,
-  AboutView,
+  components:{ 
+    //ViveroView,
+   /*ServiciosonlineView,
+    PoscosechaView,
+    NutricionView,
+    MipeView,
+    EstablecimientoView,
+    MaterialesView,
+    AboutView,*/
+   },
+
+ 
+  
+  
+
 }
 </script>
 
