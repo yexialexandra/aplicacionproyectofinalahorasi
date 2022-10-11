@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/"> Home </router-link>
+    <router-link to="/"> Inicio </router-link>
     <router-link to="/about"> About </router-link>
     <router-link to="/materiales"> Materiales </router-link>
     <router-link to="/vivero"> Vivero </router-link>
@@ -12,9 +12,14 @@
   </nav>
   <router-view />
   <vivero-view></vivero-view>
+    <div class="classfooter">
+      <ComFooter/>
+    </div>
+    
 </template>
 
 <script lang="ts">
+  import ComFooter from '../src/components/ComFooter.vue'
 //import ViveroView from './views/ViveroView.vue';
 //import ServiciosonlineView from './views/ServiciosonlineView.vue';
 //import PoscosechaView from './views/PoscosechaView.vue';
@@ -28,6 +33,7 @@
 export default{
   name:'App',
   components:{ 
+    ComFooter
     //ViveroView,
    /*ServiciosonlineView,
     PoscosechaView,
@@ -37,10 +43,6 @@ export default{
     MaterialesView,
     AboutView,*/
    },
-
- 
-  
-  
 
 }
 </script>
@@ -52,7 +54,7 @@ export default{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
-  background-color: #012c14;
+  background-color: #087438;
 }
 
 nav {
@@ -135,6 +137,10 @@ font-family: verdana, Geneva, Tahoma, sans-serif;
    }
    #check:checked ~ .menu{
     right: 0;
+   }
+   .classfooter{
+    margin-top: 0%;
+    
    }
 /*INFORMACION*/
 #informacion{

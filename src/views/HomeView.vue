@@ -1,8 +1,6 @@
 <template>
     <section id="informacion" class="seccion1">
-    <div class="fff">
-        <CarruselComponent/>
-    </div>
+
     <div class="seccion2">
         <div class= "asociados"> 
             <img src="../assets/asociados.jpg" alt="">
@@ -21,11 +19,9 @@
 </template>
 
 <script lang="ts">
-    import CarruselComponent from "@/components/CarruselComponent.vue";
 
     export default{
         components:{
-            CarruselComponent
         }
     }
 </script>
@@ -38,6 +34,7 @@
 .seccion2{
     width: 90%;
     display:flex;
+    background-color: black;
 
 }
 
