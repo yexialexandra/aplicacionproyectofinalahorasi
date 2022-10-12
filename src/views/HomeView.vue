@@ -47,6 +47,12 @@ export default {
     justify-content: center;
     align-items: center;
     background-color: rgb(226, 226, 226);
+    background-color: #e3e3e3;
+    opacity: 1;
+    background-image: radial-gradient(#fcfcfc 1px, transparent 1px), radial-gradient(#fcfcfc 1px, #e3e3e3 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    padding: 1em;
 
 }
 
@@ -145,7 +151,8 @@ export default {
     0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 
