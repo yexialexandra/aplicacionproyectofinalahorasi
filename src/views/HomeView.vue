@@ -46,7 +46,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(225, 255, 216);
+    background-color: rgb(226, 226, 226);
 
 }
 
@@ -82,8 +82,8 @@ export default {
 .quienessomos {
     display: flex;
     transition: 300ms all;
-    background-color: rgb(104, 234, 124);
-    color: green;
+    background-color: rgb(32, 128, 173);
+    color: white;
     width: 90%;
     margin-top: 10px;
     padding: 2em;
