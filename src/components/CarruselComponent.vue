@@ -27,6 +27,11 @@
 
   </div>
 </template>
+<script lang="ts">
+export default{
+    name: 'CarruselComponent',
+}
+</script>
 
 <script lang="ts">
 

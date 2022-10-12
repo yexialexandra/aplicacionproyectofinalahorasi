@@ -67,11 +67,30 @@ import {store} from '../store/store'
     </div>
     <div class="form observaciones">
         <h5>Recomendaciones de fertilización y enmiendas</h5>
-        <p>Enmienda: {{enmiendas}}</p>
+        <hr/>
+        <p>Enmienda: {{enmiendas}}Kg/sitio</p>
+        <p>La aplicación de cal dolomita debe realizarse de forma homogénea en el lote con 
+            el fin de neutralizar la cantidad de Al intercambiable en el suelo</p>
+        <hr/>
         <p>Fertilizantes</p>
-        <p>Urea: {{fertilizantes.urea}}kg/planta/año</p>
+        <hr/>
+        <p>Urea: {{fertilizantes.urea}} kg/planta/año</p>
+        <p>Las aplicaciones deben distribuirse acorde al momento fenológico de la planta, 
+            concentrando las aplicaciones en periodos vegetativos y reduciendo la dosis en 
+        periodos reproductivos a una proporción 2:1</p>
+        <hr/>
         <p>DAP: {{fertilizantes.dap}}kg/planta/año</p>
+        <p>Las aplicaciones deben distribuirse acorde al numero de aplicaciones a realizar,
+            teniendo en cuenta la densidad del suelo para optimizar el aprovechamiento 
+            de los nutrientes.
+        </p>
+        <hr/>
         <p>KCl: {{fertilizantes.kcl}}kg/planta/año</p>
+        <p>Las aplicaciones deben distribuirse acorde al momento fenológico de la planta, 
+            concentrando las aplicaciones en periodos vegetativos y reduciendo la dosis en 
+        periodos reproductivos a una proporción 2:1</p>
+        <p>En la fertilización anual se debe realizar aplicación de agrimins (elementos menores) a una proporción de 4:1 
+            - Elementos mayores:Elementos menores.</p>
     </div>
 </div>
 </template>
@@ -85,7 +104,9 @@ import {store} from '../store/store'
 }
 
 .form {
-  background-color: #ccf6d1;
+  background-color: rgb(243, 251, 255);
+  border: solid 2px;
+  border-color: rgb(163, 211, 235);
   border-radius: 20px;
   box-sizing: border-box;
   height: 52vw;
