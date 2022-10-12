@@ -81,20 +81,18 @@ import {store} from '../store/store'
   background-color: rgb(255, 255, 255);
   display:flex;
   justify-content: center;
-  height: 100vh;
 }
 
 .form {
   background-color: #ccf6d1;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 52vw;
+  height: max-content;
   padding: 1%;
   width: 22%;
   color:#0b0909;
   margin: 10px;
-  margin-top: 10%;
-  position: static;
+
 }
 .observaciones{
     width: 40%;
@@ -102,9 +100,9 @@ import {store} from '../store/store'
 input[type=text] {
   width: 100%;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 h5 {
-    font-family:cursive;
+ color: green;
 }
 </style>

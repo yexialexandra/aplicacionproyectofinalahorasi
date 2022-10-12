@@ -53,12 +53,11 @@ export default{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ffffff;
-  background-color: #087438;
 }
 
 nav {
   padding: 30px;
+  background-color: rgb(32, 173, 102);
 }
 
 nav a {
@@ -67,16 +66,25 @@ nav a {
   text-decoration: none;
   display: inline-block;
   width: 10%;
+  transition: all 300ms;
+}
+
+nav a:hover{
+  color: rgb(104, 234, 124);
+  transition: all 300ms;
 }
 
 nav a.router-link-exact-active {
-  color: #696b6a;
+  color:rgb(104, 234, 124);
+  border-bottom: 1px solid rgb(104, 234, 124); 
+  transition: all 300ms;
 }
 /*REST*/
 *{
 margin:0;
 padding:0;
-font-family: verdana, Geneva, Tahoma, sans-serif;
+/* font-family: 'M PLUS Rounded 1c', sans-serif; */
+font-family: 'Comfortaa', cursive;
 }
 .menu a{
     color: rgb(1, 38, 1);
