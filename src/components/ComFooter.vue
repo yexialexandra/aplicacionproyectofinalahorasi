@@ -4,11 +4,10 @@
         <div class="row">
           <div class="col-6 col-md-2 mb-3">
             <h5>Ricardo Montoya Infante</h5>
-            <img src="https://www.caritas.org.mx/wp-content/uploads/2019/02/cualidades-persona-humanitaria.jpg" alt="" height="100px" width="100px">
+            <a href="https://www.linkedin.com/in/ricardo-montoya-infante-837782a0/" target="_blank" ><img src="../assets/ricardo.png" alt="" height="100px" width="100px"></a>
             <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Suscripciones</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">3108078425</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ricardomontoyain@gmail.com</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas frecuentes</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acerca de</a></li>
             </ul>
@@ -16,11 +15,10 @@
     
           <div class="col-6 col-md-2 mb-3">
             <h5>Liseth Viviana Ospina </h5>
-            <img src="https://www.caritas.org.mx/wp-content/uploads/2019/02/cualidades-persona-humanitaria.jpg" alt="" height="100px" width="100px">
+            <a href="https://www.linkedin.com/in/liseth-viviana-ospina-jaramillo-74737470/" target="_blank" ><img src="../assets/liseth.jpg" alt="" height="100px" width="100px"></a>
             <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Suscripciones</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">3234576820</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">lisethvivianaospinajaramillo</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas frecuentes</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acerca de</a></li>
             </ul>
@@ -28,11 +26,10 @@
     
           <div class="col-6 col-md-2 mb-3">
             <h5>Yexi Alexandra Jaramillo</h5>
-            <img src="https://www.caritas.org.mx/wp-content/uploads/2019/02/cualidades-persona-humanitaria.jpg" alt="" height="100px" width="100px">
+            <a href="https://www.linkedin.com/in/yexi-alexandra-jaramillo-ramirez-704005240/" target="_blank" ><img src="../assets/yexi.jpg" alt="" height="100px" width="100px"></a>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Suscripciones</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">3113537315</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">yexialexa90@gmail.com</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas frecuentes</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acerca de</a></li>
             </ul>

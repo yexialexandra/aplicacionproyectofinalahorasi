@@ -4,27 +4,20 @@
         <div class="seccion2">
             <div class="asociados">
                 <div class="img">
-                    <img class="asociados-img"
-                        src="http://fronterra.com.mx/fronterra/wp-content/uploads/2018/04/vision.png" alt="">
+                        <img src="../assets/logoaguacate.png" alt="" style= 'height="300px" width="200px"'/>
                 </div>
                 <div class="info">
-                    <h4>ASOCIADOS</h4>
-                    <P>Asohasspen cuenta con 43 socios activos<br> alrededor de la vereda La Estrella.</P>
+                    <h4>AVOCADO WORLD</h4>
+                    <P>Avocado World es una página que te ayudará a mejorar el nivel de tecnificación en tus procesos productivos</P>
                     <a href="#" class="boton-saber-mas">Saber Más</a>
                 </div>
             </div>
             <div class="quienessomos">
                 <div class="info">
                     <h5>QUIENES SOMOS</h5>
-                    <P>Es una estrategia de desarrollo Rural con identidad Territorial que fue diseñada por la
-                        Secretaria de Agricultura del Departamento de Caldas para impulsar y dinamizar la
-                        comercialización de los productos del sector agropecuario y agroindustrial, esta estrategia
-                        resalta la procedencia, saber cultural la naturalidad, la calidad, la innocuidad, la sanidad e
-                        innovación de los diferentes productos, con el propósito de impulsar el crecimiento
-                        socioeconómico del departamento, buscando así posicionar los productos en mercados
-                        especializados y formados del orden local regional, nacional e internacional. La estrategia
-                        Origen Caldas, reconoce con su sello la producción con altos estándares de calidad y buenas
-                        prácticas de manufactura..</P>
+                    <P>Somos una empresa que ha pensado en el bienestar de los campesinos y agricultores con tan solo un click.
+                    Esta es una herramienta tecnológica que permite calcular qué porcentajes y/o cantidades de fertilizantes necesitas para tus
+                    cultivos. Así mismo realizamos el análisis de los suelos para preveer que las condiciones son óptimas, garantizando mejores resultados.</P>
                     <a href="#" class="boton-saber-mas">Saber Más</a>
                 </div>
             </div>

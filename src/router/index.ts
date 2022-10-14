@@ -13,34 +13,9 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/EstablecimientoView.vue')
   },
   {
-    path: '/mipe',
-  name: 'mipe',
-    component: () => import('../views/MipeView.vue')
-  },
-  {
-    path: '/nutricion',
-  name: 'nutricion',
-    component: () => import('../views/NutricionView.vue')
-  },
-  {
-    path: '/vivero',
-  name: 'vivero',
-    component: () => import('../views/ViveroView.vue')
-  },
-  {
-    path: '/poscosecha',
-  name: 'poscosecha',
-    component: () => import('../views/PoscosechaView.vue')
-  },
-  {
     path: '/serviciosonline',
   name: 'serviciosonline',
     component: () => import('../views/ServiciosonlineView.vue')
-  },
-  {
-    path: '/materiales',
-    name: 'materiales',
-    component: () => import('../views/MaterialesView.vue')
   },
   {
     path: '/about',
@@ -48,29 +23,9 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/AboutView.vue')
   },
   {
-    path: '/vivero',
-    name: 'vivero',
-    component: () => import('../views/ViveroView.vue')
-  },
-  {
     path: '/establecimiento',
     name: 'establecimiento',
     component: () => import('../views/EstablecimientoView.vue')
-  },
-  {
-    path: '/mipe',
-    name: 'mipe',
-    component: () => import('../views/MipeView.vue')
-  },
-  {
-    path: '/nutricion',
-    name: 'nutricion',
-    component: () => import('../views/NutricionView.vue')
-  },
-  {
-    path: '/poscosecha',
-    name: 'poscosecha',
-    component: () => import('../views/PoscosechaView.vue')
   },
   {
     path: '/serviciosonline',
