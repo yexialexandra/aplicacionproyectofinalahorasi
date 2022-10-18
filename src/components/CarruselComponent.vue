@@ -38,7 +38,7 @@ Por un lado, los suelos con altos contenidos en arcilla alrededor del 20-25% no 
           </div>
           <div class="carousel-item active">
           <img src="../assets/monitoreo.png" class="d-block w-100" alt="...">
-          <h1>Lorem ipsum 1</h1>
+          <h1>Observación directa: Con este método se puede identificar el daño causado en el fruto y reconocer las plagas que los generan, como son: Heilipus lauri: Identificación de orificios circulares en el fruto donde este insecto deposita los huevos y los cubre nuevamente con residuos de la corteza del fruto de aguacate.</h1>
           </div>
           <div class="carousel-item active">
           <img src="../assets/poda.png" class="d-block w-100" alt="...">
@@ -46,7 +46,8 @@ Por un lado, los suelos con altos contenidos en arcilla alrededor del 20-25% no 
           </div>
           <div class="carousel-item active">
           <img src="../assets/recoleccion.png" class="d-block w-100" alt="...">
-          <h1>Lorem ipsum 1</h1>
+          <h1>Cosecha de Aguacate
+De 20 a 30 días previos a cosechar y durante la cosecha, no se deberán aplicar pesticidas sistémicos ó translaminares en los platos o sobre el follaje de los árboles de aguacate; los productos de contacto se permite aplicarlos 8 días antes de la cosecha. Se deben cosechar los frutos que hayan alcanzado su madurez fisiológica y que están en un estado conocido como sazón, (tres cuartos (3/4)) o madurez de cosecha.</h1>
           </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
